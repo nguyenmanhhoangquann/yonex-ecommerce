@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+yonex/node_modules/
+
+# Production build outputs
+dist/
+yonex/dist/
+
+# Backend build outputs & database
+target/
+yonex-backend/target/
+/data/
+/yonex-backend/data/
+
+# IDE & Editor
+.idea/
+yonex-backend/.idea/
+*.iml
+.vscode/
+
+# Environment variables & Logs
+.env
+.env.local
+*.log
+.DS_Store
+Thumbs.db
