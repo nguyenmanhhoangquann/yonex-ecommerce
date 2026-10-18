@@ -87,14 +87,14 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         // Public endpoints
                         .requestMatchers("/api/v1/auth/**").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/api/v1/sports/**").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/api/v1/categories/**").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/api/v1/products/**").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/api/v1/sports", "/api/v1/sports/**").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/api/v1/categories", "/api/v1/categories/**").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/api/v1/products", "/api/v1/products/**").permitAll()
                         .requestMatchers(HttpMethod.POST, "/api/v1/racquet-selector/**").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/api/v1/news/**").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/api/v1/athletes/**").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/api/v1/stores/**").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/api/v1/faqs/**").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/api/v1/news", "/api/v1/news/**").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/api/v1/athletes", "/api/v1/athletes/**").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/api/v1/stores", "/api/v1/stores/**").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/api/v1/faqs", "/api/v1/faqs/**").permitAll()
                         .requestMatchers("/swagger-ui/**", "/swagger-ui.html", "/api-docs/**").permitAll()
                         .requestMatchers("/h2-console/**").permitAll()
                         // Admin endpoints
